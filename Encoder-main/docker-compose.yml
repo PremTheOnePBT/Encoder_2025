@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  encodermain:
+    image: encodermain
+    build:
+      context: .
+      dockerfile: ./Dockerfile
