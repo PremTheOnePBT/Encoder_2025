@@ -34,17 +34,17 @@ os.system(f"wget {THUMB} -O thumb.jpg")
 ffmpeg = []
 ffmpeg.append("-map 0 -c:v libx265 -crf 24 -c:s copy  -s 1280x720 -preset veryfast -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
 try:
- api_id = int(os.environ.get("API_ID"))
- api_hash = os.environ.get("API_HASH")
- bot_token = os.environ.get("BOT_TOKEN")
+ api_id = int(os.environ.get("12183504"))
+ api_hash = os.environ.get("e8940ffd7acc09622c404b9e42d3aacb")
+ bot_token = os.environ.get("5278800567:AAGfqbMu3ZbTeJTfocP2EDV8oDdIT7pbzkE")
  DATABASE_URL = os.environ.get("DATABASE_URL") 
- BOT_USERNAME = "neswtsbot"
+ BOT_USERNAME = "Prem_Hulk32_bot"
  MAX_MESSAGE_LENGTH = 4096
  download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
- sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
+ sudo_users = list(set(int(x) for x in os.environ.get("5137809317").split()))
  sudo_users.append(1099725030)
  sudo_users.append(5089884151)
- LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
+ LOG_CHANNEL = os.environ.get("prembotlogs")
 except Exception as e:
  LOGS.info("ENV Are Missing")
 
